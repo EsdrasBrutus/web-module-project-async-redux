@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background-image: 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a9e66ccf-90b4-4967-af80-9c1973b2a5a9/dbwbmgc-e62fe5d1-f3c6-4be3-baea-031cecfd0e4e.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvYTllNjZjY2YtOTBiNC00OTY3LWFmODAtOWMxOTczYjJhNWE5XC9kYndibWdjLWU2MmZlNWQxLWYzYzYtNGJlMy1iYWVhLTAzMWNlY2ZkMGU0ZS5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.yaUdHA1U2m_9Ka3gX39jWjahihNib2vCMpbg3M2-M5I';
+
 }
 
 .App-logo {
@@ -37,10 +39,24 @@
   }
 }
 
-.container {
+.digimon-container {
   color: DarkBlue;
   display: flex;
   flex-direction: row;
-  border: black solid 1px;
-  width: ;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  align-items: center;
+  width: 100rem;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  animation: fadeIn 700ms ease-in-out 1s both;
+  cursor: pointer;
 }

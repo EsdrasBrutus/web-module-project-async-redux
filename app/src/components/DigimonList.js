@@ -4,6 +4,8 @@ import Digimon from "./Digimon";
 import { connect } from "react-redux";
 import { fetchDigimon } from "../actions"
 
+const logo = 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Digimon_Logo.svg/1280px-Digimon_Logo.svg.png'
+
 const DigimonList = (props)=>{
 
     useEffect(()=>{
@@ -12,9 +14,9 @@ const DigimonList = (props)=>{
 
 
     return(
-        <div>
-            <h1>Digimon, Digital Monsters! App</h1>
-            <div className='container'>
+        <div className='container'>
+            <img src={logo} />
+            <div className='digimon-container'>
                 {props.digimon.map(item => (
                     <Digimon key={Date. now()} digimon ={item} />
                 ))}
