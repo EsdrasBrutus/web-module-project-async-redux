@@ -8,13 +8,17 @@ const DigimonList = (props)=>{
 
     useEffect(()=>{
         props.fetchDigimon();
-    }, [props.fetchDigimon])
+    }, [])
 
 
     return(
         <div>
             <h1>Digimon, Digital Monsters! App</h1>
-            <Digimon />
+            <div className='container'>
+                {props.digimon.map(item => (
+                    <Digimon key={Date. now()} digimon ={item} />
+                ))}
+            </div>
         </div>
     )
     
